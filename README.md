@@ -1,5 +1,7 @@
 # expert-octo-engine
 
+A starting point to create Vue + Laravel web applications.
+
 High level technologies used:
  - Laravel 11
  - Vite 5
@@ -7,7 +9,7 @@ High level technologies used:
 
 ## To get running:
 
-### 1 Use Linux (Ubuntu) OS or Windows Subsystem for Linux -> WSL when using Windows.
+### 1 Use Linux (Ubuntu) OS or Windows Subsystem for Linux (WSL) when using Windows.
 [Ubuntu](https://ubuntu.com/tutorials/install-ubuntu-desktop#1-overview)
 [WSL](https://learn.microsoft.com/en-us/windows/wsl/install)
 
@@ -29,9 +31,17 @@ sudo apt install php8.2-{bcmath,xml,fpm,mysql,zip,intl,ldap,gd,cli,bz2,curl,mbst
 
 ```bash
 sudo mysql
+```
+```bash
 CREATE USER 'silly'@'localhost' IDENTIFIED BY 'password';
+```
+```bash
 GRANT ALL PRIVILEGES ON *.* TO 'silly'@'localhost' WITH GRANT OPTION;
+```
+```bash
 FLUSH PRIVILEGES;
+```
+```bash
 exit
 ```
 
@@ -43,11 +53,15 @@ cd expert-octo-engine
 ### 7 Install what you have downloaded
 ```bash
 composer install
+```
+```bash
 npm install
 ```
 
 ### 8 Run
 ```bash
 php artisan serve
+```
+```bash
 npm run dev
 ```
